@@ -1,0 +1,31 @@
+
+websocket json data 
+{
+    "type": "direct_message",
+    "recipient_id": 2,
+    "content": "Hello!"
+}
+
+{
+    "type": "group_message",
+    "group_id": 1,
+    "content": "Hello everyone!"
+}
+
+http request json data
+# create group 
+{
+    "name": "Project Team Alpha"  
+}
+
+# direct messages [GET,POST]
+url: api/chat/messages/direct/user-id/
+{
+    "content": "Hey, how's the project going?"
+}
+
+# group messages [GET, POST]
+url: api/chat/messages/group/user-id/
+{
+    "content": "Meeting at 2 PM today!"
+}
