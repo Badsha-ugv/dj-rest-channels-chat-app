@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
-from rest_framework.decorators import 
+from rest_framework.decorators import api_view
 
 from .models import ChatGroup, Message
 from .serializers import ChatGroupSerializer, MessageSerializer
