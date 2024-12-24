@@ -13,7 +13,7 @@ django.setup()
 
 application = ProtocolTypeRouter({
     "http": get_asgi_application(),
-    "websocket": JWTAuthMiddleware(  # Use your custom middleware here
-        URLRouter(websocket_urlpatterns)
-    ),
+    # "websocket": JWTAuthMiddleware(  # Use your custom middleware here
+    #     URLRouter(websocket_urlpatterns)
+    # ),
 })
